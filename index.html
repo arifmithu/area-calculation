@@ -18,7 +18,7 @@
         <p>Geometry Calculation</p>
       </div>
       <div>
-        <button class="btn btn-active btn-primary">Primary</button>
+        <button class="btn btn-active btn-primary">Start</button>
       </div>
     </header>
     <main class="flex mt-5 gap-5">
@@ -34,13 +34,13 @@
                 id="triangle-base"
                 type="text"
                 placeholder="b"
-                class="w-24 border-2 rounded h-10 pl-2"
+                class="w-20 border-2 rounded h-10 pl-2"
               /><span class="ml-2 mr-4">cm</span>
               <input
                 id="triangle-height"
                 type="text"
                 placeholder="h"
-                class="w-24 border-2 rounded h-10 pl-2"
+                class="w-20 border-2 rounded h-10 pl-2"
               /><span class="ml-2 mr-4">cm</span>
             </div>
             <p class="pt-4">Total Area = <span id="triangle-area">0</span></p>
@@ -61,12 +61,12 @@
               <input id="rectangle-width"
                 type="text"
                 placeholder="w"
-                class="w-24 border-2 rounded h-10 pl-2"
+                class="w-20 border-2 rounded h-10 pl-2"
               /><span class="ml-2 mr-4">cm</span>
               <input id="rectangle-length"
                 type="text"
                 placeholder="l"
-                class="w-24 border-2 rounded h-10 pl-2"
+                class="w-20 border-2 rounded h-10 pl-2"
               /><span class="ml-2 mr-4">cm</span>
             </div>
             <p class="pt-4">Total Area = <span id="rectangle-area">0</span></p>
@@ -84,20 +84,20 @@
             <h2 class="card-title">Perallelogram</h2>
             <p class="mb-5">Area = b * h</p>
             <div>
-              <input
+              <input id="parallelogram-base"
                 type="text"
                 placeholder="b"
-                class="w-24 border-2 rounded h-10 pl-2"
+                class="w-20 border-2 rounded h-10 pl-2"
               /><span class="ml-2 mr-4">cm</span>
-              <input
+              <input id="parallelogram-height"
                 type="text"
                 placeholder="h"
-                class="w-24 border-2 rounded h-10 pl-2"
+                class="w-20 border-2 rounded h-10 pl-2"
               /><span class="ml-2 mr-4">cm</span>
             </div>
-            <p class="pt-4">Total Area = <span>0</span></p>
+            <p class="pt-4">Total Area = <span id="parallelogram-area">0</span></p>
             <div class="card-actions justify-end w-full mt-5">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button onclick="parallelogramAreaCalculation()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -180,5 +180,6 @@
     </main>
     <script src="js/triangle-area-calculation.js"></script>
     <script src="js/rectangle-area-calculation.js"></script>
+    <script src="js/parallelogram-area-calculation.js"></script>
   </body>
 </html>
